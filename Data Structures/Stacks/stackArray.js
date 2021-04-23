@@ -1,4 +1,4 @@
-// Stack using Array
+// Stack implemented in Array
 
 class Stack {
   constructor() {

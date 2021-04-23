@@ -1,4 +1,4 @@
-// Stack implemented in Linked List
+// Queue implemented in Linked List
 
 class Node {
   constructor(value) {
@@ -7,10 +7,10 @@ class Node {
   }
 }
 
-class Stack {
+class Queue {
   constructor() {
-    this.top = null;
-    this.bottom = null;
+    this.first = null;
+    this.last = null;
     this.length = 0;
   }
 
@@ -24,34 +24,29 @@ class Stack {
 
   peek() {
     if (this.isEmpty()) {
-      console.log("Is empty");
+      console.log("Is Empty");
     } else {
-      return this.top;
+      return this.first;
     }
   }
 
-  push(value) {
+  enqueue(value) {
     const newNode = new Node(value);
-    if (this.isEmpty()) {
-      this.bottom = newNode;
-      this.top = this.bottom;
+    if (this.length === 0) {
+      this.first = newNode;
     } else {
-      newNode.next = this.top;
+      this.last.next = newNode;
     }
-    this.top = newNode;
+    this.last = newNode;
     this.length++;
   }
 
-  pop() {
+  dequeue() {
     if (this.isEmpty()) {
       console.log("Is Empty");
-      return;
     } else {
-      this.top = this.top.next;
+      this.first = this.first.next;
+      this.length--;
     }
-    if (this.length === 1) {
-      this.bottom = null;
-    }
-    this.length--;
   }
 }
