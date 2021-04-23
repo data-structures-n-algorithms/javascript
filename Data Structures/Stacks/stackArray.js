@@ -5,6 +5,14 @@ class Stack {
     this.stack = []
   }
 
+  isEmpty() {
+    if (this.stack.length === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   peek() {
     if (this.isEmpty()) {
       console.log("Is empty");
@@ -22,14 +30,6 @@ class Stack {
       console.log("Is Empty");
     } else {
       this.stack.pop();
-    }
-  }
-
-  isEmpty() {
-    if (this.stack.length === 0) {
-      return true;
-    } else {
-      return false;
     }
   }
 }
