@@ -1,5 +1,5 @@
 // The goal of these 2 methods is to find the first repeated item of the array
-// and return -1 if there are not repeated item
+// and returns -1 if there are not repeated item
 
 function firstRecurringCharacter(input) {
   let x = [];
