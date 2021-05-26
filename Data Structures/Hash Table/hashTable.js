@@ -4,7 +4,7 @@ class HashTable {
   }
 
   _hash(key) {
-    let hash = 0;
+    let hash = 0; // higher the hash, higher the number of indexes will be and less collisions will occur
     for (let i = 0; i < key.length; i++) {
       hash = (hash + key.charCodeAt(i) * i) % this.data.length;
     }
