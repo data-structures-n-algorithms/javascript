@@ -1,7 +1,7 @@
-# Algorithms & Data Structures with JavaScript
+# Algorithms & Data Structures in JavaScript
 
 ## Introduction
-Algorithms & Data Structures(ADS) are an important topic in Software Development world. Create excellent algorithms is a skill which all developers should master and ADS are fundamental to create efficient code. This repository contains implementation of commom ADS and the goal of this repository is to help all developers, especially beginners, master ADS.
+Algorithms & Data Structures(ADS) are an important topic in Software Development world. Create excellent algorithms is a skill which all developers should master and ADS are fundamental to create efficient code. This repository contains implementation of common ADS and the goal of this repository is to help all developers, especially beginners, master ADS.
 
 ## Overview
 - **Data Structures** 
