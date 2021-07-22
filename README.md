@@ -1,7 +1,9 @@
+English | [Português](https://github.com/data-structures-n-algorithms/javascript/blob/master/README-PT.md)
+
 # Algorithms & Data Structures in JavaScript
 
 ## Introduction
-Algorithms & Data Structures(ADS) are an important topic in Software Development world. Create excellent algorithms is a skill which all developers should master and ADS are fundamental to create efficient code. This repository contains implementation of common ADS and the goal of this repository is to help all developers, especially beginners, master ADS.
+Algorithms & Data Structures(ADS) is an important topic in Software Development world. Create excellent algorithms is a skill which all developers should master and ADS are fundamental to create efficient code. This repository contains implementation of common ADS and the goal of this repository is to help all developers, especially beginners, master ADS.
 
 ## Overview
 - **Data Structures** 
@@ -10,7 +12,7 @@ Algorithms & Data Structures(ADS) are an important topic in Software Development
   - [x] Stacks
   - [x] Queues
   - [x] Linked Lists
-  - [x] Binary Search Tree
+  - [x] Binary Tree
   - [x] Graph
   - [ ] Binary Heap
   - [ ] Priority Queue
