@@ -1,0 +1,14 @@
+{
+  "name": "algorithms-data-structures-JS",
+  "version": "1.0.0",
+  "description": "Algorithms and Data Structures implemented in Javascript",
+  "repository": "https://github.com/data-structures-n-algorithms/javascript.git",
+  "author": "Edmilson-C <edmilson.conceicao09@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "prettier": "^2.3.2"
+  }
+}
