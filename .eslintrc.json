@@ -16,7 +16,12 @@
         "semi": ["warn", "never"],
         "no-unused-vars": 0,
         "max-classes-per-file": ["error", 2],
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "no-console": "off",
+        "no-underscore-dangle": "off",
+        "consistent-return": "warn",
+        "prefer-destructuring": "warn",
+        "no-param-reassign": "off"
       }
     }
   ]
