@@ -2,26 +2,27 @@
 // and returns -1 if there are not repeated item
 
 function firstRecurringCharacter(input) {
-  let x = [];
+  const x = []
   for (let i = 0; i < input.length; i++) {
     for (let j = 0; j < x.length; j++) {
       if (input[i] === x[j]) {
-        return input[i];
+        return input[i]
       }
     }
-    x.push(input[i]);
+    x.push(input[i])
   }
-  return -1;
+
+  return -1
 }
 
 function firstRecurringCharacter2(input) {
-  let map = {};
+  const map = {}
   for (let i = 0; i < input.length; i++) {
     if (map[input[i]] !== undefined) {
-      return input[i];
-    } else {
-      map[input[i]] = i;
+      return input[i]
     }
+    map[input[i]] = i
   }
-  return -1;
+
+  return -1
 }

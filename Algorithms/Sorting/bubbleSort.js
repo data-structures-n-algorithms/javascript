@@ -1,4 +1,10 @@
-const numbers = [99, 44, 2, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+const numbers = [99, 44, 2, 6, 2, 1, 5, 63, 87, 283, 4, 0]
+
+function swipe(array, first, second) {
+  const aux = array[first]
+  array[first] = array[second]
+  array[second] = aux
+}
 
 function bubbleSort(array) {
   for (let i = 0; i < array.length; i++) {
@@ -8,10 +14,4 @@ function bubbleSort(array) {
       }
     }
   }
-}
-
-function swipe(array, first, second) {
-  let aux = array[first]
-  array[first] = array[second]
-  array[second] = aux
 }

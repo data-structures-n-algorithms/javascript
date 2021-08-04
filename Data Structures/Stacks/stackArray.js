@@ -5,31 +5,30 @@ class Stack {
     this.stack = []
   }
 
+  // Returns true if the stack contains no elements
   isEmpty() {
-    if (this.stack.length === 0) {
-      return true;
-    } else {
-      return false;
-    }
+    if (this.stack.length === 0) return true
+
+    return false
   }
 
+  // Returns the element at the top of the stack
   peek() {
-    if (this.isEmpty()) {
-      console.log("Is empty");
-    } else {
-      return this.stack[this.stack.length - 1];
-    }
+    if (this.isEmpty()) return -1
+
+    return this.stack[this.stack.length - 1]
   }
 
+  // Inserts the specified element onto the top of the stack
   push(value) {
-    this.stack.push(value);
+    this.stack.push(value)
   }
 
+  // Removes and returns the element at the top of the stack
   pop() {
-    if (this.isEmpty()) {
-      console.log("Is Empty");
-    } else {
-      this.stack.pop();
-    }
+    if (this.isEmpty()) return -1
+
+    this.stack.pop()
+    return this.peek()
   }
 }

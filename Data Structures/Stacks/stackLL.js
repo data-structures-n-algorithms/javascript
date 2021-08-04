@@ -2,56 +2,55 @@
 
 class Node {
   constructor(value) {
-    this.value = value;
-    this.next = null;
+    this.value = value
+    this.next = null
   }
 }
 
 class Stack {
   constructor() {
-    this.top = null;
-    this.bottom = null;
-    this.length = 0;
+    this.top = null
+    this.bottom = null
+    this.length = 0
   }
 
+  // Returns true if the stack contains no elements
   isEmpty() {
     if (this.length === 0) {
-      return true;
-    } else {
-      return false;
+      return true
     }
+    return false
   }
 
+  // Returns the element at the top of the stack
   peek() {
-    if (this.isEmpty()) {
-      console.log("Is empty");
-    } else {
-      return this.top;
-    }
+    if (this.isEmpty()) return -1
+    return this.top
   }
 
+  // Inserts the specified element onto the top of the stack
   push(value) {
-    const newNode = new Node(value);
+    const newNode = new Node(value)
+
     if (this.isEmpty()) {
-      this.bottom = newNode;
-      this.top = this.bottom;
+      this.bottom = newNode
+      this.top = this.bottom
     } else {
-      newNode.next = this.top;
+      newNode.next = this.top
     }
-    this.top = newNode;
-    this.length++;
+
+    this.top = newNode
+    this.length++
   }
 
+  // Removes and returns the element at the top of the stack
   pop() {
-    if (this.isEmpty()) {
-      console.log("Is Empty");
-      return;
-    } else {
-      this.top = this.top.next;
-    }
-    if (this.length === 1) {
-      this.bottom = null;
-    }
-    this.length--;
+    if (this.isEmpty()) return -1
+
+    this.top = this.top.next
+    if (this.length === 1) this.bottom = null
+
+    this.length--
+    return this.peek()
   }
 }
