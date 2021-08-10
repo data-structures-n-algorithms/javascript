@@ -21,6 +21,10 @@ class LinkedList {
     return false
   }
 
+  size() {
+    return this.length;
+  }
+
   append(value) {
     const newNode = new Node(value)
 
