@@ -27,8 +27,6 @@ class LinkedList {
     this.tail.next = newNode
     this.tail = newNode
     this.length++
-
-    return this
   }
 
   prepend(value) {
@@ -37,28 +35,29 @@ class LinkedList {
     newNode.next = this.head
     this.head = newNode
     this.length++
-
-    return this
   }
 
   insert(index, value) {
-    if (index === 0) {
+    if (index <= 0) {
       this.prepend(value)
       return
     }
 
-    if (index >= this.length) {
+    if (index >= this.length || this.isEmpty()) {
       this.append(value)
-    } else {
-      let node = this.head
-      for (let i = 0; i < index - 1; i++) {
-        node = node.next
-      }
-      const newNode = new Node(value)
-      newNode.next = node.next
-      node.next = newNode
-      this.length++
+      return
     }
+
+    let node = this.head
+    for (let i = 0; i < index - 1; i++) {
+      node = node.next
+    }
+
+    const newNode = new Node(value)
+    newNode.next = node.next
+    node.next = newNode
+
+    this.length++
   }
 
   remove(index) {
@@ -74,15 +73,18 @@ class LinkedList {
 
     if (index === 0) {
       this.head = this.head.next
-    } else {
-      let node = this.head
-      for (let i = 0; i < index - 1; i++) {
-        node = node.next
-      }
-
-      const temp = node.next
-      node.next = temp.next
+      this.length--
+      return
     }
+
+    let node = this.head
+    for (let i = 0; i < index - 1; i++) {
+      node = node.next
+    }
+
+    const temp = node.next
+    node.next = temp.next
+
     this.length--
   }
 }
