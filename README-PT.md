@@ -51,4 +51,4 @@ Qualquer um pode contribuir neste repositório, não importa se tens domínio de
 5. Esperar aprovação
 
 ## Autor
-- [Edmilson da Conceição](https://github.com/Edmilson-da-Conceicao)
+- [Edmilson da Conceição](https://github.com/Edmilson-C)

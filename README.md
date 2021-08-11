@@ -51,4 +51,4 @@ Anyone can contribute to this repository, it doesn't matter if you are a master 
 5. Wait for approval
 
 ## Author
-- [Edmilson da Conceição](https://github.com/Edmilson-da-Conceicao)
+- [Edmilson da Conceição](https://github.com/Edmilson-C)
