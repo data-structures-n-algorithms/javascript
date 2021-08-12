@@ -71,12 +71,16 @@ class LinkedList {
 
   // Returns the first element of the list
   getFirst() {
-    return this.head
+    if (this.isEmpty()) return null
+
+    return this.head.value
   }
 
   // Returns the last element of the list
   getLast() {
-    return this.tail
+    if (this.isEmpty()) return null
+
+    return this.tail.value
   }
 
   // Returns the element at the specified position in the list
@@ -97,7 +101,7 @@ class LinkedList {
       tempNode = tempNode.next
     }
 
-    return tempNode
+    return tempNode.value
   }
 
   // Returns the position of the first occurrence of the element
@@ -107,7 +111,7 @@ class LinkedList {
 
     let tempNode = this.head
     for (let i = 0; i < this.length; i++) {
-      if (tempNode.value === value) return tempNode
+      if (tempNode.value === value) return i
 
       tempNode = tempNode.next
     }
