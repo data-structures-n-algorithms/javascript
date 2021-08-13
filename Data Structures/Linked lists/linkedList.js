@@ -27,7 +27,7 @@ class LinkedList {
     return this.length
   }
 
-  // Inserts the element at the first position in the list
+  // Inserts the element at the last position in the list
   append(value) {
     const newNode = new Node(value)
 
@@ -36,7 +36,7 @@ class LinkedList {
     this.length++
   }
 
-  // Inserts the element at the last position in the list
+  // Inserts the element at the first position in the list
   prepend(value) {
     const newNode = new Node(value)
 
