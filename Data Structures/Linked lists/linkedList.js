@@ -191,15 +191,11 @@ class LinkedList {
       return true
     }
 
-    if (this.tail.value === value) {
-      this.removeLast()
-      return true
-    }
-
     let tempNode = this.head
+    let aux
     for (let i = 0; i < this.length - 1; i++) {
       if (tempNode.next.value === value) {
-        const aux = tempNode.next
+        aux = tempNode.next
         tempNode.next = aux.next
 
         this.length--
