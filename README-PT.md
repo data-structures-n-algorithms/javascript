@@ -43,12 +43,28 @@ Algoritmos e Estruturas de Dados(AED) é um tópico importante no mundo de desen
 ## Contribuição
 Qualquer um pode contribuir neste repositório, não importa se tens domínio de AED ou se estás a começar a aprender a programar, toda contribuição é bem-vinda, sinta-se a vontade em adicionar, refatorar ou modificar qualquer coisa que achas que é ou será útil, desde um pequeno erro ortográfico até melhoria de algum algoritmo ou mesmo uma sugestão. Mas se estiveres a adicionar algo novo, certifique-se de colocar na pasta correcta.
 
-## Como usar este repositório
-1. Fazer o Fork
-2. Clonar
-3. Fazer as mudanças
-4. Fazer um pull request
-5. Esperar aprovação
+## Como contribuir/usar
+1. Fazer o Fork deste repositório(Lado superior direito)
+2. Clonar o repositório __forkado__
+   <br />Por exemplo, execute este comando no teu terminal/command prompt:
+   ```
+   git clone https://github.com/<teu-username-do-github>/javascript.git
+   ```
+   **Troque \<teu-username-do-github> pelo teu username**
+3. Instale todas as dependências(Deves ter Node instalado na tua máquina)
+   <br />Execute o seguinte comando:
+   ```
+   npm install
+   # ou
+   yarn install
+   ```
+   Se não tens Node instalado na tua máquina, podes baixar [aqui](https://nodejs.org), certifique-se que baixes a versão estável, a versão que termina com ***LTS**, por exemplo **14.17.5 LTS**.
+4. Faça as tuas modificações com `git add` e `git commit`. **Nota:** Por favor, escreva boas mensagens de commit.
+5. Execute o seguinte comando para fazer push das modificações para o teu repositório __forkado__:
+   ```
+   git push origin master
+   ```
+6. Vá para a página do Github do teu fork e faça um pull request.
 
 ## Autor
 - [Edmilson da Conceição](https://github.com/Edmilson-C)
